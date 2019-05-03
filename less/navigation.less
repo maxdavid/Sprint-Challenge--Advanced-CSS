@@ -1,1 +1,30 @@
-// Navigation code here
+nav {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: @nav-bg;
+  border-bottom: 1px solid @nav-border;
+
+  h1 {
+    font-size: 4rem;
+    padding: 15px 0;
+  }
+  .nav-links {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      font-size: 1.6rem;
+      color: @nav-font;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
