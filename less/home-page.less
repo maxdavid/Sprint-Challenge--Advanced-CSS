@@ -60,10 +60,6 @@ header {
     display: flex;
     justify-content: center;
 
-    @media @phone {
-      flex-direction: reverse-column;
-    }
-
     .walk-text {
       width: 50%;
 
@@ -90,6 +86,26 @@ header {
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+    }
+
+    @media @phone {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 15px;
+
+      .walk-img {
+        width: 100%;
+        margin: 15px 0;
+      }
+      .walk-text {
+        width: 100%;
+
+        .btn {
+          width: 100%;
+          font-size: 3rem;
+          height: auto;
+        }
       }
     }
   }

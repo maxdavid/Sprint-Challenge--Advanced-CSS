@@ -197,6 +197,7 @@ nav .nav-links a:hover {
 @media (max-width: 400px) {
   nav .nav-links {
     flex-direction: column;
+    width: 100%;
   }
   nav .nav-links a {
     padding: 10px 0;
@@ -268,11 +269,6 @@ header img {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 500px) {
-  .home .walk {
-    flex-direction: reverse-column;
-  }
-}
 .home .walk .walk-text {
   width: 50%;
 }
@@ -307,4 +303,23 @@ header img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 15px;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .home .walk .walk-text .btn {
+    width: 100%;
+    font-size: 3rem;
+    height: auto;
+  }
 }
