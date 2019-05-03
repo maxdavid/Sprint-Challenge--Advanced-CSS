@@ -1,5 +1,5 @@
 nav {
-  height: 100px;
+  min-height: 100px;
   width: 100%;
   text-align: center;
   background-color: @nav-bg;
@@ -25,6 +25,22 @@ nav {
       &:hover {
         opacity: 0.7;
       }
+    }
+
+    @media @small-phone {
+      flex-direction: column;
+      a {
+        padding: 10px 0;
+        font-size: 2rem;
+        width: 100%;
+        border-top: 1px solid @nav-border;
+      }
+    }
+  }
+  @media @small-phone {
+    h1 {
+      font-size: 3rem;
+      padding: 10px 0;
     }
   }
 }

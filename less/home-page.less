@@ -31,6 +31,14 @@ header {
       border-radius: 20px;
       height: 100%;
     }
+
+    @media @phone {
+      img {
+        width: 100%;
+      }
+      .sky { display: none; }
+      .launch { display: none; }
+    }
   }
 
   .visit-planets {
@@ -51,6 +59,10 @@ header {
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+
+    @media @phone {
+      flex-direction: reverse-column;
+    }
 
     .walk-text {
       width: 50%;
